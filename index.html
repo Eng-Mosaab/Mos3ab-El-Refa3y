@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Mosaab.css">
-    <link rel="website icon" type="image/png" href="./images/Logo.png">
-    <script src="Mosaab.js"></script>
-
-    <title>V8 ZONE - Home</title>
-   
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V8 ZONE - SignUp</title>
+  <link rel="website icon" type="image/png" href="./images/Logo.png">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Nada.CSS">
 </head>
-
 <body>
-    
-    <div class="container">
 
-        <nav>
-        <a class="logo" href="Mosaab.html">V8 ZONE</a>
-        <ul id="nav">
-
-            <li>
-                <a id="Cars" href="Fathy.html">Cars</a>
-                <ul class="dropdown">
-                    <li> <a id="Mazda" href="Fathy.html">Mazda</a></li>
-                    <li> <a id="Nissan" href="Fathy.html">Nissan</a></li>
-                    <li> <a id="Porsche" href="Fathy.html">Porsche</a></li>
-                    <li> <a id="Tesla" href="Fathy.html">Tesla</a></li>
-                    <li> <a id="Chevorlet" href="Fathy.html">Chevorlet</a></li>
-                    <li> <a id="Mercedes" href="Fathy.html">Mercedes</a></li>
-                </ul>
-            </li>
-
-            <li><a id="News" href="YOUCCEF.html">News</a></li>
-            <li><a id="Sales" href="Mazen.html">Sales</a></li>
-            <li><a id="Finance" href="Youssef.html">Finance</a></li>
-            <li><a id="AboutUs" href="Mohab.html">About Us</a></li>
-            <li><a id="ContactUs" href="Adam.html">Contact Us</a></li>
-            <li><a id="LogOut" href="Nouran.html">Log Out</a></li>
-            <li><button type="button" id="language" onclick="language()">language</button></li>
-
-        </ul>
-    </nav>
-
-
+  <div class="container">
     <div class="content">
-
-        <div class="text">
-
-            <h2 id="WELCOME">🏁 WELCOME TO V8ZONE</h2>
-            <p id="Paragraph">Discover the Power, Style, and Legacy of Cars
-                From classic icons to modern beasts — we bring you detailed specs, reviews, and everything you need to know about your favorite cars.</p>
-
-        </div>
-
-        <div class="image">
-
-            <img src="./images/Car 2.png">
-
-        </div>
-
+      <h2 class="logo">V8 ZONE</h2>
+      <br>
+      <div class="text">
+        <h2>Welcome!<br><span>To Our Cars website.</span></h2>
+      </div>
     </div>
 
+    <div class="logreb-box">
+      <div class="form-log-box">
+        <form id="signupForm">
+          <h2>Sign Up</h2>
+
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-user'></i></span>
+            <input type="text" id="name" />
+            <div class="error" id="nameError"></div>
+            <label>Name</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-envelope'></i></span>
+            <input type="email" id="email" />
+            <div class="error" id="emailError"></div>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+            <input type="password" id="password" />
+            <div class="error" id="passwordError"></div>
+            <label>Password</label>
+          </div>
+
+          <div>
+            <button class="btn" type="submit">Sign Up</button>
+
+          </div>
+          <p>Already have an account? <a href="Nouran.html">Log In</a></p>
+          
+        </form>
+      </div>
     </div>
+  </div>
+
+  <script src="Nada.js"></script>
 </body>
-
 </html>
-
