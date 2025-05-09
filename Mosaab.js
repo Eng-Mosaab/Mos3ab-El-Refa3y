@@ -9,6 +9,7 @@ function language() {
         document.getElementById("Cars").innerText = "سيارات";
         document.getElementById("News").innerText = "الاخبار";
         document.getElementById("Sales").innerText = "المبيعات";
+        document.getElementById("Finance").innerText = "تمويل";
         document.getElementById("AboutUs").innerText = "من نحن";
         document.getElementById("ContactUs").innerText = "تواصل معنا";
         document.getElementById("LogOut").innerText = "تسجيل الخروج";
@@ -29,6 +30,7 @@ function language() {
         document.getElementById("Cars").innerText = "Autos";
         document.getElementById("News").innerText = "Nachrichten";
         document.getElementById("Sales").innerText = "Verkäufe";
+        document.getElementById("Finance").innerText = "Finanzen";
         document.getElementById("AboutUs").innerText = "Über uns";
         document.getElementById("ContactUs").innerText = "Kontakt";
         document.getElementById("LogOut").innerText = "Abmelden";
@@ -49,6 +51,7 @@ function language() {
         document.getElementById("Cars").innerText = "Cars";
         document.getElementById("News").innerText = "News";
         document.getElementById("Sales").innerText = "Sales";
+        document.getElementById("Finance").innerText = "Finance";
         document.getElementById("AboutUs").innerText = "About Us";
         document.getElementById("ContactUs").innerText = "Contact Us";
         document.getElementById("LogOut").innerText = "Log Out";
