@@ -1,59 +1,69 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>V8 Zone - About Us</title>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mosaab.css">
     <link rel="website icon" type="image/png" href="./images/Logo.png">
-    <link href="Mohab.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
-  </head>
+    <script src="Mosaab.js"></script>
 
-  <body>
+    <title>V8 ZONE - Home</title>
+   
+  
+</head>
 
+<body>
+    
+    <div class="container">
 
-    <header>
-      <a href="Mosaab.html" class="logo">
-        <img src="./images/Logo.png">
-        <p>V8 ZONE</p>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="Mosaab.html">Home</a></li>
-          <li><a href="Fathy.html">Cars</a></li>
-          <li><a href="YOUCCEF.html">News</a></li>
-          <li><a href="Mazen.html">Sales</a></li>
-          <li><a href="Youssef.html">Finance</a></li>
-          <li><a href="Adam.html">Contact Us</a></li>
-          <li><a href="Nouran.html" id="logout">Log Out</a></li>
+        <nav>
+        <a class="logo" href="Mosaab.html">V8 ZONE</a>
+        <ul id="nav">
+
+            <li>
+                <a id="Cars" href="Fathy.html">Cars</a>
+                <ul class="dropdown">
+                    <li> <a id="Mazda" href="Fathy.html">Mazda</a></li>
+                    <li> <a id="Nissan" href="Fathy.html">Nissan</a></li>
+                    <li> <a id="Porsche" href="Fathy.html">Porsche</a></li>
+                    <li> <a id="Tesla" href="Fathy.html">Tesla</a></li>
+                    <li> <a id="Chevorlet" href="Fathy.html">Chevorlet</a></li>
+                    <li> <a id="Mercedes" href="Fathy.html">Mercedes</a></li>
+                </ul>
+            </li>
+
+            <li><a id="News" href="YOUCCEF.html">News</a></li>
+            <li><a id="Sales" href="Mazen.html">Sales</a></li>
+            <li><a id="Finance" href="Youssef.html">Finance</a></li>
+            <li><a id="AboutUs" href="Mohab.html">About Us</a></li>
+            <li><a id="ContactUs" href="Adam.html">Contact Us</a></li>
+            <li><a id="LogOut" href="Nouran.html">Log Out</a></li>
+            <li><button type="button" id="language" onclick="language()">language</button></li>
+
         </ul>
-      </nav>
-    </header>
+    </nav>
 
 
-    <div id="container">
-      <h1>V8 Zone</h1>
-      <p>
-        <strong>
-          Welcome to our website! Our passionate team is committed to providing reliable and up-to-date information on all types of cars. Whether you're a car enthusiast, an interested buyer, or simply interested in the latest models and features, we deliver.
-          <br />
-          Our goal is to compare cars, explore specifications, and stay informed about the automotive world—all in one place. We believe that configuring a car starts with the right information, and that's exactly what we aim to provide.
-          <br />
-          If you have any questions or suggestions, please let us know by  <a href="Adam.html">Clicking here</a>. You’ll get an immediate response.
-        </strong>
-        <br />
+    <div class="content">
 
-      </p>
+        <div class="text">
 
-      <img src="./images/logo.jpg" alt="V8 Logo" />
+            <h2 id="WELCOME">🏁 WELCOME TO V8ZONE</h2>
+            <p id="Paragraph">Discover the Power, Style, and Legacy of Cars
+                From classic icons to modern beasts — we bring you detailed specs, reviews, and everything you need to know about your favorite cars.</p>
+
+        </div>
+
+        <div class="image">
+
+            <img src="./images/Car 2.png">
+
+        </div>
+
     </div>
 
-    <footer>
-      <p>&copy; 2025 V8 ZONE. All rights reserved.</p>
-    </footer>
+    </div>
+</body>
 
-  </body>
 </html>
