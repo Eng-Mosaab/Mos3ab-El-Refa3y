@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="image/png" href="./images/Logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
-    <title>V8 ZONE - Log in</title>
-    <link rel="stylesheet" href="Nouran.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mosaab.css">
+    <link rel="website icon" type="image/png" href="./images/Logo.png">
+    <script src="Mosaab.js"></script>
+
+    <title>V8 ZONE - Home</title>
+   
+  
 </head>
+
 <body>
+    
+    <div class="container">
 
-    <div class="yoo">
-        <form action="mosaab.html" onsubmit="return validateForm()">
-            <h2>Log in</h2>
-            <label for="username">username</label><br>
-            <input class="button" type="text" id="username" required placeholder="Username"><br>
-            <label for="password">password</label><br>
-            <input class="button" type="password" id="password" required placeholder="Password" maxlength="16"><br>
-            <button class="Log" type="submit"><b>Log in</b></button>
-            <p>Don't have an account? <a href="Nada.html">sign up</a></p>
-        </form>
+        <nav>
+        <a class="logo" href="Mosaab.html">V8 ZONE</a>
+        <ul id="nav">
+
+            <li>
+                <a id="Cars" href="Fathy.html">Cars</a>
+                <ul class="dropdown">
+                    <li> <a id="Mazda" href="Fathy.html">Mazda</a></li>
+                    <li> <a id="Nissan" href="Fathy.html">Nissan</a></li>
+                    <li> <a id="Porsche" href="Fathy.html">Porsche</a></li>
+                    <li> <a id="Tesla" href="Fathy.html">Tesla</a></li>
+                    <li> <a id="Chevorlet" href="Fathy.html">Chevorlet</a></li>
+                    <li> <a id="Mercedes" href="Fathy.html">Mercedes</a></li>
+                </ul>
+            </li>
+
+            <li><a id="News" href="YOUCCEF.html">News</a></li>
+            <li><a id="Sales" href="Mazen.html">Sales</a></li>
+            <li><a id="Finance" href="Youssef.html">Finance</a></li>
+            <li><a id="AboutUs" href="Mohab.html">About Us</a></li>
+            <li><a id="ContactUs" href="Adam.html">Contact Us</a></li>
+            <li><a id="LogOut" href="Nouran.html">Log Out</a></li>
+            <li><button type="button" id="language" onclick="language()">language</button></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="content">
+
+        <div class="text">
+
+            <h2 id="WELCOME">🏁 WELCOME TO V8ZONE</h2>
+            <p id="Paragraph">Discover the Power, Style, and Legacy of Cars
+                From classic icons to modern beasts — we bring you detailed specs, reviews, and everything you need to know about your favorite cars.</p>
+
+        </div>
+
+        <div class="image">
+
+            <img src="./images/Car 2.png">
+
+        </div>
+
     </div>
-    <script>
-  function validateForm() {
-    const name = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
 
-    // Dictionary of usernames and passwords
-    const users = {
-      "youssef": "youssef",
-      "mosaab": "mosaab",
-      "youccef": "youccef",
-      "fathy": "fathy",
-      "mohab": "mohab",
-      "nada": "nada",
-      "nouran":"nouran",
-      "mazen" : "mazen",
-      "adam" : "adam",
-      "samar" : "samar",    
-    };
-
-
-    // Check if username exists and password matches
-    if (users[name] && users[name] === password) {
-      alert(`Welcome Back, ${name}!`);
-      return true;
-    } else {
-      alert("Access Denied. Invalid username or password.");
-      return false;
-    }
-  }
-</script>
-
+    </div>
 </body>
+
 </html>
+
+
+
+
+
 
