@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="image/png" href="./images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>V8 ZONE - Log in</title>
+    <link rel="stylesheet" href="Nouran.css">
+</head>
+<body>
+
+    <div class="yoo">
+        <form action="mosaab.html" onsubmit="return validateForm()">
+            <h2>Log in</h2>
+            <label for="username">username</label><br>
+            <input class="button" type="text" id="username" required placeholder="Username"><br>
+            <label for="password">password</label><br>
+            <input class="button" type="password" id="password" required placeholder="Password" maxlength="16"><br>
+            <button class="Log" type="submit"><b>Log in</b></button>
+            <p>Don't have an account? <a href="Nada.html">sign up</a></p>
+        </form>
+    </div>
+    <script>
+  function validateForm() {
+    const name = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Dictionary of usernames and passwords
+    const users = {
+      "youssef": "ironman",
+      "mosaab": "spiderman",
+      "youccef": "captainA",
+      "fathy": "batman",
+      "mohab": "thor",
+      "nada": "wanda",
+      "nouran":"blackwidow",
+      "mazen" : "hulk",
+      "adam" : "hawkeye",
+      "samar" : "1234",    
+    };
+
+
+    // Check if username exists and password matches
+    if (users[name] && users[name] === password) {
+      alert(`Welcome Back, ${name}!`);
+      return true;
+    } else {
+      alert("Access Denied. Invalid username or password.");
+      return false;
+    }
+  }
+</script>
+
+</body>
+</html>
+
